@@ -26,6 +26,8 @@ let score=100
 let score1=101
 let score2=102
 console.log(Array.isArray("Ketan"))
-console.log(Array.from("Ketan"))
-console.log(Array.from({name:"Ketan"}))  //Need to provide if keys arrays or values arrays should be generated
-console.log(Array.of(score,score1,score2))
+console.log(Array.from("Ketan")) //create array of string
+//console.log(Array.from({name:"Ketan"}))  //Need to provide key-value if keys arrays or values arrays should be generated
+var abc=Array.from({name:"Ketan"})
+console.log(abc)
+console.log(Array.of(score,score1,score2)) // create an array of varibles
