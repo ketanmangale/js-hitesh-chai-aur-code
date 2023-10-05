@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const changeText = function(){
+        // console.log("Ketan");
+        document.querySelector('h1').innerHTML = "Best JS series"
+    }
+    
+
+
+
+const sayDate = function(){
+    console.log("Hitesh", Date.now());
+}
+
+document.querySelector('#start').addEventListener('click',function(){
+    const stopInterval=setInterval(sayDate,1000,"Hi")
+    document.querySelector('#stop').addEventListener('click',function(){
+    clearInterval(stopInterval)
+})
+})
+
+
+
+</script>
+</html>
